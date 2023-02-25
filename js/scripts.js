@@ -1,4 +1,6 @@
 $(function() {
+
+
     $(".carousel").carousel( { interval: 2000 } );
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -11,24 +13,23 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
+
+    // Actives the Reservation button JS Test
+
+    const reserveButton = document.getElementById('reserveButton');
+
+    function activateReservationModule() {
+        $('#reserveModal').modal()
+    }
+
+    reserveButton.addEventListener('click', activateReservationModule);
+
+    // Activates the Login button with Jquery
+
+    
+
 });
 
-// Actives the Reservation button
 
-const reserveButton = document.getElementById('reserveButton');
 
-function activateReservationModule() {
-    $('#reserveModal').modal()
-}
 
-reserveButton.addEventListener('click', activateReservationModule);
-
-// Actives the Login button
-
-const loginButton = document.getElementById('loginButton');
-
-function activateLoginModule() {
-    $('#loginModal').modal()
-}
-
-loginButton.addEventListener('click', activateLoginModule);
