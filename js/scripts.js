@@ -12,7 +12,9 @@ $(function() {
         }
     });
 });
+
 // Actives the Reservation button
+
 const reserveButton = document.getElementById('reserveButton');
 
 function activateReservationModule() {
@@ -20,7 +22,9 @@ function activateReservationModule() {
 }
 
 reserveButton.addEventListener('click', activateReservationModule);
+
 // Actives the Login button
+
 const loginButton = document.getElementById('loginButton');
 
 function activateLoginModule() {
