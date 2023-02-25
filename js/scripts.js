@@ -29,4 +29,7 @@ $(function() {
     $('#loginButton').click(function(){
         $('#loginModal').modal('show');
         });
+
+    // I wanted to compare these two methods, I think the JQuery is 100% easier to write out
+
 });
