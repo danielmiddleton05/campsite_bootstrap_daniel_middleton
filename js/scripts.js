@@ -24,10 +24,11 @@ $(function() {
 
     reserveButton.addEventListener('click', activateReservationModule);
 
-    // Activates the Login button with Jquery
+    // Activates the Login button with JQuery
 
-    
-
+    $('#loginButton').click(function(){
+        $('#loginModal').modal('show');
+        });
 });
 
 
